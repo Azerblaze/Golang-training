@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"training/app/configs"
+	"training/app/database"
+)
 
 func main() {
-	fmt.Println("Halo semua")
+	configs.InitConfig()
+	database.InitDatabase()
 }
